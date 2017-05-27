@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>login</title>
+    <link rel="stylesheet" href="//cdn.bootcss.com/weui/1.1.1/style/weui.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/jquery-weui/1.0.1/css/jquery-weui.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        body{
+            max-width: 640px;
+            margin: 0 auto;
+            background: #e8e8e8;
+        }
+        .weui-label {
+            width: 55px;
+        }
+        .weui-icon-cancel{
+            color: #888;
+        }
+        .weui-btn{
+            border-radius: 0;
+        }
+        .weui-flex{
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+        }
+        .login-icon{
+            width: 55px;
+            height: 55px;
+        }
+    </style>
+</head>
+<body>
+<form id="login-form" action="" method="post">
+    <div class="weui-cells weui-cells_form">
+        <div class="weui-cell weui-cell_default">
+            <div class="weui-cell__hd">
+                <label class="weui-label">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                </label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="text" datatype="m" id="account" name="account" value="" placeholder="请输入手机号">
+            </div>
+            <div class="weui-cell__ft">
+                <i class="weui-icon-cancel"></i>
+            </div>
+        </div>
+    </div>
+    <div class="weui-cells weui-cells_form">
+        <div class="weui-cell weui-cell_default">
+            <div class="weui-cell__hd">
+                <label class="weui-label">
+                    <i class="fa fa-lock fa-2" aria-hidden="true"></i>
+                </label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="password" datatype="*6-16" id="password" name="password" value="" placeholder="请输入密码">
+            </div>
+            <div class="weui-cell__ft">
+                <i class="weui-icon-cancel"></i>
+            </div>
+        </div>
+    </div>
+    <div class="weui-cells weui-cells_form">
+        <a class="weui-btn weui-btn_warn js-submit">登&nbsp;&nbsp;&nbsp;&nbsp;录</a>
+    </div>
+</form>
+<div class="weui-flex">
+    <div class="weui-flex__item">
+        <div class="placeholder">
+            <a href="#" style="color: #000">注册</a>
+        </div>
+    </div>
+    <div class="weui-flex__item">
+        <div class="placeholder">修改密码</div>
+    </div>
+</div>
+<div class="weui-flex">
+    <div class="weui-flex__item">
+        <div class="placeholder">其他方式登录</div>
+    </div>
+</div>
+<div class="weui-flex">
+    <div class="weui-flex__item">
+        <div class="placeholder">
+            <img src="/images/mobile/images/icon/weixin.png" class="login-icon">
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
+<script src="https://cdn.bootcss.com/layer/3.0.1/layer.min.js"></script>
+
+</html>
